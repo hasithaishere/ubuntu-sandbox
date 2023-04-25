@@ -2,6 +2,7 @@ FROM buildkite/agent:ubuntu
 
 WORKDIR /home/buildkite-agent
 
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     wget \
     git \
