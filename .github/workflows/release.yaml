@@ -22,7 +22,7 @@ jobs:
         id: metadata
         uses: docker/metadata-action@v3
         with:
-          images: ${{ env.IMG_NAME }}
+          images: "hasithaishere/aws-buildkite-ubuntu-agent"
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
