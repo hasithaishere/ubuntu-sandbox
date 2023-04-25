@@ -23,6 +23,6 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
     && rm awscliv2.zip \
     && rm -rf aws
 
-# Install Node.js
+# Install Node.js 16.x
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - \
     && apt-get install -y nodejs
