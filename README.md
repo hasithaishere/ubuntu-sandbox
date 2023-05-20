@@ -1,2 +1,2 @@
-# aws-buildkite-ubuntu-agent
-Buildkite Agent Container(Ubuntu Based) for support AWS deployments.  
+# Ubuntu Sandbox
+Containerized Ubuntu Sandbox for executing tests which will need to be isolate from host OS.

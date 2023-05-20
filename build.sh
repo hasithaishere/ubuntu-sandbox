@@ -1,4 +1,4 @@
-docker build -t aws-buildkite-ubuntu-agent -f ./Dockerfile .
-docker tag aws-buildkite-ubuntu-agent hasithaishere/aws-buildkite-ubuntu-agent:latest
+docker build -t ubuntu-sandbox -f ./Dockerfile .
+docker tag ubuntu-sandbox hasithaishere/ubuntu-sandbox:latest
 docker login
-docker push -a hasithaishere/aws-buildkite-ubuntu-agent
+docker push -a hasithaishere/ubuntu-sandbox

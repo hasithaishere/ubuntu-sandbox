@@ -1,12 +1,14 @@
-FROM buildkite/agent:ubuntu
+FROM ubuntu:22.04
 
-WORKDIR /home/buildkite-agent
+WORKDIR /home/workspace
 
 # Install dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     wget \
     git \
     unzip \
+    mysql-client \
+    golang-go \
     && rm -rf /var/lib/apt/lists/*
 
 # Install AWS SAM CLI
