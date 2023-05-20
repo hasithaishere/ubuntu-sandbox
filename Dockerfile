@@ -4,11 +4,13 @@ WORKDIR /home/workspace
 
 # Install dependencies
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    curl \
     wget \
     git \
     unzip \
     mysql-client \
     golang-go \
+    rustc \
     && rm -rf /var/lib/apt/lists/*
 
 # Install AWS SAM CLI
